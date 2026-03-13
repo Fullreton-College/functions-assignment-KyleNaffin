@@ -38,11 +38,20 @@ int main()
 
 int accept_money()
 {
-  //write your code
+  int accepted = 0;
+  int coin;
+  cout<<"Deep Fried Twinkies cost $3.50"<<endl;
+  do{
+    cout<<"Enter Coin in cents (5, 10, 25, 100): ";
+    cin>>coin;
+    accepted += coin;
+  }
+  while (accepted < 350);
+  return accepted;
 }
 
 int compute_change(int total_paid) 
 {
-//write your code
+  return total_paid - 350;
 }
 
